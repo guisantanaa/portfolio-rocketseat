@@ -1,0 +1,20 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>{{ item.id }}</title>
+{% endblock %}
+
+{% block content %}
+
+    <section class="curso">
+
+        <div class="card-curso" id="{{ item.id }}">
+            <iframe src="{{item.urlID}}" frameborder="0"></iframe>
+
+        </div>
+
+    </section>
+
+    <script src="/script.js"></script>
+
+{% endblock %}

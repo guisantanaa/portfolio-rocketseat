@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% block head %}
+
+        <title>Rocketseat</title>
+
+    {% endblock %}
+
+    <link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/1271517147349626881/Mf1UjRa0.jpg"
+    type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="link">
+            <a href="/about">Sobre</a>
+            <a href="/courses">Conteúdos</a>
+            <a href="/not-found.njk">Comunidade</a>
+            </a>
+        </div>
+    </header>
+
+    {% block content %} {% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+{% extends "layout.njk" %}
+
+{% block head%}
+
+    <title>Courses - Rocketseat</title>
+{% endblock %}
+
+{% block content %}
+
+    <div id="wrapper">
+        <h1>Conteúdos</h1>
+    </div>
+
+    <section class="cards">
+
+        {% for item in items %}
+
+            <div class="card" id="{{ item.id }}">
+                <img src="{{ item.image }}" alt="Logo da starter">
+                <h2>{{ item.title }}</h2>
+                <a class="{{ item.urlID }}">{{ item.price }}</a>
+            </div>
+
+        {% endfor %}
+
+    </section>
+
+   {# <div class="modal-overlay">
+        <div class="modal">
+            <a class="close-modal">
+                <i class="material-icons">x</i>
+            </a>
+
+            <div class="modal-content">
+            </div>
+        </div>
+    </div> #}
+
+    <script src="/script.js"></script>
+
+{% endblock %}
